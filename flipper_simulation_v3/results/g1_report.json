@@ -1,0 +1,106 @@
+{
+  "gate": false,
+  "fit": {
+    "stateless": {
+      "parameters": {
+        "gain": 20,
+        "speed": 115,
+        "velocity_memory_s": 0.0
+      },
+      "training_rmse_deg": 0.5505405962037839
+    },
+    "memory": {
+      "parameters": {
+        "gain": 20,
+        "speed": 155,
+        "velocity_memory_s": 0.03
+      },
+      "training_rmse_deg": 0.3773159036730908
+    }
+  },
+  "validation": {
+    "nominal": {
+      "stateless": {
+        "trials": 36,
+        "rmse_deg": 0.5757745218597515,
+        "mean_recovery_error_s": 0.01611111111111111,
+        "median_recovery_error_s": 0.01,
+        "false_feasible": 1,
+        "actual_failures": 12,
+        "never_recovered": 0
+      },
+      "memory": {
+        "trials": 36,
+        "rmse_deg": 0.42364716577997813,
+        "mean_recovery_error_s": 0.02861111111111111,
+        "median_recovery_error_s": 0.03,
+        "false_feasible": 2,
+        "actual_failures": 12,
+        "never_recovered": 0
+      }
+    },
+    "loaded": {
+      "stateless": {
+        "trials": 36,
+        "rmse_deg": 0.6775498798157031,
+        "mean_recovery_error_s": 0.03166666666666667,
+        "median_recovery_error_s": 0.03,
+        "false_feasible": 2,
+        "actual_failures": 14,
+        "never_recovered": 0
+      },
+      "memory": {
+        "trials": 36,
+        "rmse_deg": 0.6289442435383857,
+        "mean_recovery_error_s": 0.045,
+        "median_recovery_error_s": 0.035,
+        "false_feasible": 5,
+        "actual_failures": 14,
+        "never_recovered": 0
+      }
+    },
+    "asymmetric": {
+      "stateless": {
+        "trials": 36,
+        "rmse_deg": 0.7864440570115727,
+        "mean_recovery_error_s": 0.043333333333333335,
+        "median_recovery_error_s": 0.035,
+        "false_feasible": 2,
+        "actual_failures": 15,
+        "never_recovered": 0
+      },
+      "memory": {
+        "trials": 36,
+        "rmse_deg": 0.7941543334629838,
+        "mean_recovery_error_s": 0.065,
+        "median_recovery_error_s": 0.045,
+        "false_feasible": 5,
+        "actual_failures": 15,
+        "never_recovered": 0
+      }
+    }
+  },
+  "profiles_met": [],
+  "history_pair": {
+    "search_profiles": 100,
+    "pairs_angle_max_0p7_and_speed_max_6": 37,
+    "comparison_start_ms_after_application": 100,
+    "report": "Largest remaining difference once angle and speed are approximately matched; residual angle and speed differences remain.",
+    "best": {
+      "future_angle_separation_deg": 0.8443929610106551,
+      "angle_match_deg": 0.011689738979185904,
+      "speed_match_deg_s": 2.2143709195374726,
+      "latent_backlash_state_difference_deg": 5.1269531250000036,
+      "history_a": [
+        5,
+        -5,
+        5
+      ],
+      "history_b": [
+        5,
+        -5,
+        10
+      ]
+    }
+  }
+}

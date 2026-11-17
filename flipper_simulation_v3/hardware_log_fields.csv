@@ -1,0 +1,12 @@
+kind,field,unit,required,description
+network,generated_s,s,yes,Timestamp at steering source
+network,received_s,s,yes,Timestamp at HTTP handler reception
+control,applied_s,s,yes,Timestamp of actual PWM write by channel
+control,channel,index,yes,Native servo channel number 0 through 11
+control,pwm_count,ticks,yes,Raw PCA9685 count
+control,offset_request_deg,degree,yes,Effective requested steering offset
+control,offset_applied_deg,degree,yes,Applied offset after firmware limits
+angle,observed_s,s,yes,Synchronized measurement timestamp
+angle,measured_angle_deg,degree,yes,Joint angle relative to calibrated neutral
+context,condition,text,yes,Load condition voltage and gait tag
+context,run_id,text,yes,Complete trajectory key for disjoint splits

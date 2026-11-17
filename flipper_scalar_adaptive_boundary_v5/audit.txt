@@ -1,0 +1,2 @@
+PASS: sharp boundary, nested updates, worst-case witnesses, and optional v4 travel check.
+PASS: 5 result files match the clean rerun byte for byte.

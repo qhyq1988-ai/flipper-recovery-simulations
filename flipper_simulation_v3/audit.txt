@@ -1,0 +1,2 @@
+Verified firmware endpoints, PWM counts, disjoint splits, recovery decision, and all message accounting.
+50 result files match the independent rerun byte for byte.

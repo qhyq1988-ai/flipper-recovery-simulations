@@ -1,0 +1,17 @@
+{
+  "gate": "Reference course: recovery MAE below one 50-ms opportunity and gain of at least 10 ms against stateless model without increasing false feasible predictions, on nominal and on at least one held-out plant profile.",
+  "holdout_submission_lags_ms": [
+    0,
+    250,
+    400,
+    500,
+    550,
+    650
+  ],
+  "validation_profiles": [
+    "nominal",
+    "loaded",
+    "asymmetric"
+  ],
+  "model_training_loss": "free rollout RMSE after first second, on nominal identification logs only"
+}

@@ -1,0 +1,645 @@
+{
+  "status": "references_completed",
+  "frozen_parameters": [
+    {
+      "cap": 2,
+      "policy": "periodic",
+      "parameters": [
+        0.2,
+        null
+      ]
+    },
+    {
+      "cap": 2,
+      "policy": "threshold",
+      "parameters": [
+        1,
+        0
+      ]
+    },
+    {
+      "cap": 2,
+      "policy": "threshold_dwell",
+      "parameters": [
+        1,
+        40
+      ]
+    },
+    {
+      "cap": 4,
+      "policy": "periodic",
+      "parameters": [
+        0.6,
+        null
+      ]
+    },
+    {
+      "cap": 4,
+      "policy": "threshold",
+      "parameters": [
+        7,
+        0
+      ]
+    },
+    {
+      "cap": 4,
+      "policy": "threshold_dwell",
+      "parameters": [
+        1,
+        40
+      ]
+    },
+    {
+      "cap": 8,
+      "policy": "periodic",
+      "parameters": [
+        0.2,
+        null
+      ]
+    },
+    {
+      "cap": 8,
+      "policy": "threshold",
+      "parameters": [
+        3,
+        0
+      ]
+    },
+    {
+      "cap": 8,
+      "policy": "threshold_dwell",
+      "parameters": [
+        1,
+        25
+      ]
+    },
+    {
+      "cap": 16,
+      "policy": "periodic",
+      "parameters": [
+        0.2,
+        null
+      ]
+    },
+    {
+      "cap": 16,
+      "policy": "threshold",
+      "parameters": [
+        1,
+        0
+      ]
+    },
+    {
+      "cap": 16,
+      "policy": "threshold_dwell",
+      "parameters": [
+        1,
+        25
+      ]
+    }
+  ],
+  "scenes": {
+    "nominal": [
+      "comm_heldout_36300",
+      "comm_heldout_36301",
+      "comm_heldout_36302",
+      "comm_heldout_36303",
+      "comm_heldout_36304",
+      "comm_heldout_36305",
+      "comm_heldout_36306",
+      "comm_heldout_36307",
+      "comm_heldout_36308",
+      "comm_heldout_36309",
+      "comm_heldout_36310",
+      "comm_heldout_36311",
+      "comm_heldout_36312",
+      "comm_heldout_36313",
+      "comm_heldout_36314",
+      "comm_heldout_36315",
+      "comm_heldout_36316",
+      "comm_heldout_36317",
+      "comm_heldout_36318",
+      "comm_heldout_36319",
+      "comm_heldout_36320",
+      "comm_heldout_36321",
+      "comm_heldout_36322",
+      "comm_heldout_36323"
+    ],
+    "loaded": [
+      "comm_heldout_36340",
+      "comm_heldout_36341",
+      "comm_heldout_36342",
+      "comm_heldout_36343",
+      "comm_heldout_36344",
+      "comm_heldout_36345",
+      "comm_heldout_36346",
+      "comm_heldout_36347",
+      "comm_heldout_36348",
+      "comm_heldout_36349",
+      "comm_heldout_36350",
+      "comm_heldout_36351",
+      "comm_heldout_36352",
+      "comm_heldout_36353",
+      "comm_heldout_36354",
+      "comm_heldout_36355",
+      "comm_heldout_36356",
+      "comm_heldout_36357",
+      "comm_heldout_36358",
+      "comm_heldout_36359",
+      "comm_heldout_36360",
+      "comm_heldout_36361",
+      "comm_heldout_36362",
+      "comm_heldout_36363"
+    ],
+    "asymmetric": [
+      "comm_heldout_36380",
+      "comm_heldout_36381",
+      "comm_heldout_36382",
+      "comm_heldout_36383",
+      "comm_heldout_36384",
+      "comm_heldout_36385",
+      "comm_heldout_36386",
+      "comm_heldout_36387",
+      "comm_heldout_36388",
+      "comm_heldout_36389",
+      "comm_heldout_36390",
+      "comm_heldout_36391",
+      "comm_heldout_36392",
+      "comm_heldout_36393",
+      "comm_heldout_36394",
+      "comm_heldout_36395",
+      "comm_heldout_36396",
+      "comm_heldout_36397",
+      "comm_heldout_36398",
+      "comm_heldout_36399",
+      "comm_heldout_36400",
+      "comm_heldout_36401",
+      "comm_heldout_36402",
+      "comm_heldout_36403"
+    ]
+  },
+  "summary": [
+    {
+      "profile": "asymmetric",
+      "policy": "every_change",
+      "cap": 0,
+      "passed": 24,
+      "n": 24,
+      "tail_peak_deg": 4.172853500416293,
+      "mean_updates": 6.5,
+      "mean_application_bytes": 41.875,
+      "median_scored_peak_deg": 3.8901586236481194
+    },
+    {
+      "profile": "asymmetric",
+      "policy": "periodic",
+      "cap": 2,
+      "passed": 0,
+      "n": 24,
+      "tail_peak_deg": 23.139171749928746,
+      "mean_updates": 2,
+      "mean_application_bytes": 12.333333333333334,
+      "median_scored_peak_deg": 19.05130894230454
+    },
+    {
+      "profile": "asymmetric",
+      "policy": "periodic",
+      "cap": 4,
+      "passed": 7,
+      "n": 24,
+      "tail_peak_deg": 22.911855848088845,
+      "mean_updates": 4,
+      "mean_application_bytes": 25.375,
+      "median_scored_peak_deg": 13.588117421089468
+    },
+    {
+      "profile": "asymmetric",
+      "policy": "periodic",
+      "cap": 8,
+      "passed": 11,
+      "n": 24,
+      "tail_peak_deg": 12.326742981858406,
+      "mean_updates": 8,
+      "mean_application_bytes": 50.5,
+      "median_scored_peak_deg": 5.368323762070256
+    },
+    {
+      "profile": "asymmetric",
+      "policy": "periodic",
+      "cap": 16,
+      "passed": 23,
+      "n": 24,
+      "tail_peak_deg": 5.481926626683512,
+      "mean_updates": 16,
+      "mean_application_bytes": 100.75,
+      "median_scored_peak_deg": 3.898367944648503
+    },
+    {
+      "profile": "asymmetric",
+      "policy": "threshold",
+      "cap": 2,
+      "passed": 6,
+      "n": 24,
+      "tail_peak_deg": 21.80366694727989,
+      "mean_updates": 2,
+      "mean_application_bytes": 12.75,
+      "median_scored_peak_deg": 13.168080504392666
+    },
+    {
+      "profile": "asymmetric",
+      "policy": "threshold",
+      "cap": 4,
+      "passed": 12,
+      "n": 24,
+      "tail_peak_deg": 20.68964847034816,
+      "mean_updates": 3.375,
+      "mean_application_bytes": 21.458333333333332,
+      "median_scored_peak_deg": 4.818472872656283
+    },
+    {
+      "profile": "asymmetric",
+      "policy": "threshold",
+      "cap": 8,
+      "passed": 20,
+      "n": 24,
+      "tail_peak_deg": 5.765036054798148,
+      "mean_updates": 4.666666666666667,
+      "mean_application_bytes": 29.958333333333332,
+      "median_scored_peak_deg": 3.9639235928583663
+    },
+    {
+      "profile": "asymmetric",
+      "policy": "threshold",
+      "cap": 16,
+      "passed": 24,
+      "n": 24,
+      "tail_peak_deg": 4.172853500416293,
+      "mean_updates": 6.5,
+      "mean_application_bytes": 41.875,
+      "median_scored_peak_deg": 3.8901586236481194
+    },
+    {
+      "profile": "asymmetric",
+      "policy": "threshold_dwell",
+      "cap": 2,
+      "passed": 9,
+      "n": 24,
+      "tail_peak_deg": 22.195388486796322,
+      "mean_updates": 2,
+      "mean_application_bytes": 12.75,
+      "median_scored_peak_deg": 16.227227991015468
+    },
+    {
+      "profile": "asymmetric",
+      "policy": "threshold_dwell",
+      "cap": 4,
+      "passed": 12,
+      "n": 24,
+      "tail_peak_deg": 17.561155788885234,
+      "mean_updates": 2.9166666666666665,
+      "mean_application_bytes": 18.625,
+      "median_scored_peak_deg": 5.0200491388105855
+    },
+    {
+      "profile": "asymmetric",
+      "policy": "threshold_dwell",
+      "cap": 8,
+      "passed": 24,
+      "n": 24,
+      "tail_peak_deg": 4.573681846758283,
+      "mean_updates": 3.25,
+      "mean_application_bytes": 20.791666666666668,
+      "median_scored_peak_deg": 3.8979867396555266
+    },
+    {
+      "profile": "asymmetric",
+      "policy": "threshold_dwell",
+      "cap": 16,
+      "passed": 24,
+      "n": 24,
+      "tail_peak_deg": 4.573681846758283,
+      "mean_updates": 3.25,
+      "mean_application_bytes": 20.791666666666668,
+      "median_scored_peak_deg": 3.8979867396555266
+    },
+    {
+      "profile": "asymmetric",
+      "policy": "zero_update",
+      "cap": 0,
+      "passed": 0,
+      "n": 24,
+      "tail_peak_deg": 14.242667620894963,
+      "mean_updates": 0,
+      "mean_application_bytes": 0,
+      "median_scored_peak_deg": 12.463615908231043
+    },
+    {
+      "profile": "loaded",
+      "policy": "every_change",
+      "cap": 0,
+      "passed": 24,
+      "n": 24,
+      "tail_peak_deg": 4.01113934861509,
+      "mean_updates": 6.5,
+      "mean_application_bytes": 41.333333333333336,
+      "median_scored_peak_deg": 3.8118923799677593
+    },
+    {
+      "profile": "loaded",
+      "policy": "periodic",
+      "cap": 2,
+      "passed": 0,
+      "n": 24,
+      "tail_peak_deg": 23.10066493844006,
+      "mean_updates": 2,
+      "mean_application_bytes": 12.625,
+      "median_scored_peak_deg": 18.196338701257076
+    },
+    {
+      "profile": "loaded",
+      "policy": "periodic",
+      "cap": 4,
+      "passed": 11,
+      "n": 24,
+      "tail_peak_deg": 22.14297063374832,
+      "mean_updates": 4,
+      "mean_application_bytes": 25.875,
+      "median_scored_peak_deg": 12.352448272650836
+    },
+    {
+      "profile": "loaded",
+      "policy": "periodic",
+      "cap": 8,
+      "passed": 19,
+      "n": 24,
+      "tail_peak_deg": 11.771288170199547,
+      "mean_updates": 8,
+      "mean_application_bytes": 51.333333333333336,
+      "median_scored_peak_deg": 3.903308544839349
+    },
+    {
+      "profile": "loaded",
+      "policy": "periodic",
+      "cap": 16,
+      "passed": 24,
+      "n": 24,
+      "tail_peak_deg": 4.031257558849943,
+      "mean_updates": 16,
+      "mean_application_bytes": 101.79166666666667,
+      "median_scored_peak_deg": 3.8125540856800786
+    },
+    {
+      "profile": "loaded",
+      "policy": "threshold",
+      "cap": 2,
+      "passed": 6,
+      "n": 24,
+      "tail_peak_deg": 21.653507390930393,
+      "mean_updates": 2,
+      "mean_application_bytes": 12.708333333333334,
+      "median_scored_peak_deg": 13.741553240607008
+    },
+    {
+      "profile": "loaded",
+      "policy": "threshold",
+      "cap": 4,
+      "passed": 10,
+      "n": 24,
+      "tail_peak_deg": 22.52555721919498,
+      "mean_updates": 3.2916666666666665,
+      "mean_application_bytes": 20.958333333333332,
+      "median_scored_peak_deg": 5.404223741492422
+    },
+    {
+      "profile": "loaded",
+      "policy": "threshold",
+      "cap": 8,
+      "passed": 19,
+      "n": 24,
+      "tail_peak_deg": 5.4320255060396345,
+      "mean_updates": 4.666666666666667,
+      "mean_application_bytes": 29.875,
+      "median_scored_peak_deg": 3.8515771729786357
+    },
+    {
+      "profile": "loaded",
+      "policy": "threshold",
+      "cap": 16,
+      "passed": 24,
+      "n": 24,
+      "tail_peak_deg": 4.01113934861509,
+      "mean_updates": 6.5,
+      "mean_application_bytes": 41.333333333333336,
+      "median_scored_peak_deg": 3.8118923799677593
+    },
+    {
+      "profile": "loaded",
+      "policy": "threshold_dwell",
+      "cap": 2,
+      "passed": 7,
+      "n": 24,
+      "tail_peak_deg": 22.833476083479162,
+      "mean_updates": 2,
+      "mean_application_bytes": 13.041666666666666,
+      "median_scored_peak_deg": 14.536420803675163
+    },
+    {
+      "profile": "loaded",
+      "policy": "threshold_dwell",
+      "cap": 4,
+      "passed": 15,
+      "n": 24,
+      "tail_peak_deg": 19.779095188851215,
+      "mean_updates": 2.9166666666666665,
+      "mean_application_bytes": 18.75,
+      "median_scored_peak_deg": 4.520018829942617
+    },
+    {
+      "profile": "loaded",
+      "policy": "threshold_dwell",
+      "cap": 8,
+      "passed": 24,
+      "n": 24,
+      "tail_peak_deg": 4.011163711407032,
+      "mean_updates": 3.5833333333333335,
+      "mean_application_bytes": 23,
+      "median_scored_peak_deg": 3.8119176454427297
+    },
+    {
+      "profile": "loaded",
+      "policy": "threshold_dwell",
+      "cap": 16,
+      "passed": 24,
+      "n": 24,
+      "tail_peak_deg": 4.011163711407032,
+      "mean_updates": 3.5833333333333335,
+      "mean_application_bytes": 23,
+      "median_scored_peak_deg": 3.8119176454427297
+    },
+    {
+      "profile": "loaded",
+      "policy": "zero_update",
+      "cap": 0,
+      "passed": 0,
+      "n": 24,
+      "tail_peak_deg": 13.79957266935957,
+      "mean_updates": 0,
+      "mean_application_bytes": 0,
+      "median_scored_peak_deg": 12.191555822198794
+    },
+    {
+      "profile": "nominal",
+      "policy": "every_change",
+      "cap": 0,
+      "passed": 24,
+      "n": 24,
+      "tail_peak_deg": 3.939148124602002,
+      "mean_updates": 6.5,
+      "mean_application_bytes": 42.458333333333336,
+      "median_scored_peak_deg": 3.6285719770819425
+    },
+    {
+      "profile": "nominal",
+      "policy": "periodic",
+      "cap": 2,
+      "passed": 0,
+      "n": 24,
+      "tail_peak_deg": 22.57278582482598,
+      "mean_updates": 2,
+      "mean_application_bytes": 12.375,
+      "median_scored_peak_deg": 18.815132964694012
+    },
+    {
+      "profile": "nominal",
+      "policy": "periodic",
+      "cap": 4,
+      "passed": 12,
+      "n": 24,
+      "tail_peak_deg": 22.51856629293149,
+      "mean_updates": 4,
+      "mean_application_bytes": 25.916666666666668,
+      "median_scored_peak_deg": 11.105210076611916
+    },
+    {
+      "profile": "nominal",
+      "policy": "periodic",
+      "cap": 8,
+      "passed": 16,
+      "n": 24,
+      "tail_peak_deg": 9.654707534138495,
+      "mean_updates": 8,
+      "mean_application_bytes": 51.458333333333336,
+      "median_scored_peak_deg": 3.822262220817338
+    },
+    {
+      "profile": "nominal",
+      "policy": "periodic",
+      "cap": 16,
+      "passed": 24,
+      "n": 24,
+      "tail_peak_deg": 3.9391395446061113,
+      "mean_updates": 16,
+      "mean_application_bytes": 102.58333333333333,
+      "median_scored_peak_deg": 3.629523872992488
+    },
+    {
+      "profile": "nominal",
+      "policy": "threshold",
+      "cap": 2,
+      "passed": 6,
+      "n": 24,
+      "tail_peak_deg": 21.40673210533809,
+      "mean_updates": 2,
+      "mean_application_bytes": 13.125,
+      "median_scored_peak_deg": 13.4771548951483
+    },
+    {
+      "profile": "nominal",
+      "policy": "threshold",
+      "cap": 4,
+      "passed": 8,
+      "n": 24,
+      "tail_peak_deg": 20.782775171684605,
+      "mean_updates": 3.2916666666666665,
+      "mean_application_bytes": 21.291666666666668,
+      "median_scored_peak_deg": 6.288628732461158
+    },
+    {
+      "profile": "nominal",
+      "policy": "threshold",
+      "cap": 8,
+      "passed": 20,
+      "n": 24,
+      "tail_peak_deg": 5.534546935643945,
+      "mean_updates": 4.75,
+      "mean_application_bytes": 30.791666666666668,
+      "median_scored_peak_deg": 3.685433453088531
+    },
+    {
+      "profile": "nominal",
+      "policy": "threshold",
+      "cap": 16,
+      "passed": 24,
+      "n": 24,
+      "tail_peak_deg": 3.939148124602002,
+      "mean_updates": 6.5,
+      "mean_application_bytes": 42.458333333333336,
+      "median_scored_peak_deg": 3.6285719770819425
+    },
+    {
+      "profile": "nominal",
+      "policy": "threshold_dwell",
+      "cap": 2,
+      "passed": 10,
+      "n": 24,
+      "tail_peak_deg": 22.10782705929259,
+      "mean_updates": 2,
+      "mean_application_bytes": 13,
+      "median_scored_peak_deg": 14.201197256643823
+    },
+    {
+      "profile": "nominal",
+      "policy": "threshold_dwell",
+      "cap": 4,
+      "passed": 22,
+      "n": 24,
+      "tail_peak_deg": 20.112207736902562,
+      "mean_updates": 2.9166666666666665,
+      "mean_application_bytes": 18.916666666666668,
+      "median_scored_peak_deg": 3.68487590629627
+    },
+    {
+      "profile": "nominal",
+      "policy": "threshold_dwell",
+      "cap": 8,
+      "passed": 24,
+      "n": 24,
+      "tail_peak_deg": 3.9391395446061033,
+      "mean_updates": 3.4166666666666665,
+      "mean_application_bytes": 22.125,
+      "median_scored_peak_deg": 3.62225737612241
+    },
+    {
+      "profile": "nominal",
+      "policy": "threshold_dwell",
+      "cap": 16,
+      "passed": 24,
+      "n": 24,
+      "tail_peak_deg": 3.9391395446061033,
+      "mean_updates": 3.4166666666666665,
+      "mean_application_bytes": 22.125,
+      "median_scored_peak_deg": 3.62225737612241
+    },
+    {
+      "profile": "nominal",
+      "policy": "zero_update",
+      "cap": 0,
+      "passed": 0,
+      "n": 24,
+      "tail_peak_deg": 13.784831331508682,
+      "mean_updates": 0,
+      "mean_application_bytes": 0,
+      "median_scored_peak_deg": 12.617386029410884
+    }
+  ]
+}

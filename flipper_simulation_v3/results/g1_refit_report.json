@@ -1,0 +1,66 @@
+{
+  "profiles_met": [],
+  "gate": false,
+  "validation": {
+    "nominal": {
+      "stateless": {
+        "n": 36,
+        "recovery_mae_s": 0.01861111111111111,
+        "false_feasible": 1,
+        "actual_failures": 17,
+        "angle_rmse_deg": 0.5299652073094274
+      },
+      "memory": {
+        "n": 36,
+        "recovery_mae_s": 0.013333333333333334,
+        "false_feasible": 1,
+        "actual_failures": 17,
+        "angle_rmse_deg": 0.37493293149954593
+      }
+    },
+    "loaded": {
+      "stateless": {
+        "n": 36,
+        "recovery_mae_s": 0.036944444444444446,
+        "false_feasible": 2,
+        "actual_failures": 18,
+        "angle_rmse_deg": 0.7119695698492339
+      },
+      "memory": {
+        "n": 36,
+        "recovery_mae_s": 0.041666666666666664,
+        "false_feasible": 2,
+        "actual_failures": 18,
+        "angle_rmse_deg": 0.5528005943815649
+      }
+    },
+    "asymmetric": {
+      "stateless": {
+        "n": 36,
+        "recovery_mae_s": 0.02638888888888889,
+        "false_feasible": 4,
+        "actual_failures": 16,
+        "angle_rmse_deg": 0.6646508119846422
+      },
+      "memory": {
+        "n": 36,
+        "recovery_mae_s": 0.026944444444444444,
+        "false_feasible": 4,
+        "actual_failures": 16,
+        "angle_rmse_deg": 0.5500701176034972
+      }
+    }
+  },
+  "model": {
+    "stateless": {
+      "gain": 20,
+      "speed": 115,
+      "velocity_memory_s": 0.0
+    },
+    "memory": {
+      "gain": 20,
+      "speed": 130,
+      "velocity_memory_s": 0.023
+    }
+  }
+}

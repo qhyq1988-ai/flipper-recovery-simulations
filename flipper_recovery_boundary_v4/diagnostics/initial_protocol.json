@@ -1,0 +1,182 @@
+{
+  "firmware": "ea0a30bfca2e1c8cf9df1145a588155065935d0c",
+  "dt_ms": 10,
+  "offset_limit_deg": 10,
+  "band_deg": 5.0,
+  "deadline_ms": 750,
+  "transient_cap_deg": 26.0,
+  "send_lags_ms": [
+    450,
+    500,
+    550,
+    600,
+    650
+  ],
+  "wait_ms": 50,
+  "public_delay_ms": 80,
+  "transport_notes": "Fixed both arms at 80 ms. Jitter: one shared draw of 50–110 ms for the final packet in both arms, separate draws for earlier packets. Sender predicts with 80 ms only.",
+  "fit": [
+    45100,
+    45101,
+    45102,
+    45103,
+    45104,
+    45105,
+    45106,
+    45107,
+    45108,
+    45109,
+    45110,
+    45111,
+    45112,
+    45113,
+    45114,
+    45115,
+    45116,
+    45117,
+    45118,
+    45119,
+    45120,
+    45121,
+    45122,
+    45123
+  ],
+  "calibration": [
+    45200,
+    45201,
+    45202,
+    45203,
+    45204,
+    45205,
+    45206,
+    45207,
+    45208,
+    45209,
+    45210,
+    45211,
+    45212,
+    45213,
+    45214,
+    45215,
+    45216,
+    45217,
+    45218,
+    45219,
+    45220,
+    45221,
+    45222,
+    45223
+  ],
+  "holdout": [
+    45300,
+    45301,
+    45302,
+    45303,
+    45304,
+    45305,
+    45306,
+    45307,
+    45308,
+    45309,
+    45310,
+    45311,
+    45312,
+    45313,
+    45314,
+    45315,
+    45316,
+    45317,
+    45318,
+    45319,
+    45320,
+    45321,
+    45322,
+    45323,
+    45324,
+    45325,
+    45326,
+    45327,
+    45328,
+    45329,
+    45330,
+    45331
+  ],
+  "shift_factors": {
+    "nominal": {
+      "scale": 1.0,
+      "negative": 1.0,
+      "lag": 1.0
+    },
+    "load": {
+      "scale": 0.76,
+      "negative": 1.0,
+      "lag": 1.0
+    },
+    "direction": {
+      "scale": 1.0,
+      "negative": 0.67,
+      "lag": 1.0
+    },
+    "lag": {
+      "scale": 1.0,
+      "negative": 1.0,
+      "lag": 1.85
+    },
+    "combined": {
+      "scale": 0.85,
+      "negative": 0.76,
+      "lag": 1.45
+    }
+  },
+  "fit_factors": [
+    {
+      "scale": 1.0,
+      "negative": 1.0,
+      "lag": 1.0
+    },
+    {
+      "scale": 0.88,
+      "negative": 1.0,
+      "lag": 1.0
+    },
+    {
+      "scale": 1.0,
+      "negative": 0.82,
+      "lag": 1.0
+    },
+    {
+      "scale": 1.0,
+      "negative": 1.0,
+      "lag": 1.32
+    }
+  ],
+  "calibration_factors": [
+    {
+      "scale": 1.0,
+      "negative": 1.0,
+      "lag": 1.0
+    },
+    {
+      "scale": 0.83,
+      "negative": 1.0,
+      "lag": 1.0
+    },
+    {
+      "scale": 1.0,
+      "negative": 0.76,
+      "lag": 1.0
+    },
+    {
+      "scale": 1.0,
+      "negative": 1.0,
+      "lag": 1.55
+    },
+    {
+      "scale": 0.92,
+      "negative": 0.87,
+      "lag": 1.23
+    }
+  ],
+  "calibrated_false_wait_rate_cap": 0.05,
+  "gate_rule": "Holdout fixed transport: memory beats the stateless comparator chosen on calibration on both correct urgent sends and waits when both feasible, with no increase in unsafe actions or unsafe waits. Required on nominal and at least one shifted profile."
+}

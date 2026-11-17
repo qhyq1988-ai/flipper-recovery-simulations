@@ -1,0 +1,47 @@
+{
+  "seed": 45400,
+  "deadline_ms": 750,
+  "cases": [
+    {
+      "profile": "nominal",
+      "choice": "now",
+      "arrival_ms": 530,
+      "recovery_ms": 690,
+      "actual_pass": true,
+      "actual_max_error_at_deadline_deg": 2.259619559417761,
+      "best_possible_max_error_lb_deg": 0.0,
+      "travel_limit_proves_deadline_impossible": false
+    },
+    {
+      "profile": "nominal",
+      "choice": "wait",
+      "arrival_ms": 580,
+      "recovery_ms": 750,
+      "actual_pass": true,
+      "actual_max_error_at_deadline_deg": 3.700229273579936,
+      "best_possible_max_error_lb_deg": 2.2774896951154844,
+      "travel_limit_proves_deadline_impossible": false
+    },
+    {
+      "profile": "combined",
+      "choice": "now",
+      "arrival_ms": 530,
+      "recovery_ms": 730,
+      "actual_pass": true,
+      "actual_max_error_at_deadline_deg": 2.3227944639180187,
+      "best_possible_max_error_lb_deg": 1.981104589567181,
+      "travel_limit_proves_deadline_impossible": false
+    },
+    {
+      "profile": "combined",
+      "choice": "wait",
+      "arrival_ms": 580,
+      "recovery_ms": 780,
+      "actual_pass": false,
+      "actual_max_error_at_deadline_deg": 7.531877641728357,
+      "best_possible_max_error_lb_deg": 6.457435649594252,
+      "travel_limit_proves_deadline_impossible": true
+    }
+  ],
+  "interpretation": "Offline necessary test for the exact v4 integrator with arbitrary signed bounded velocity requests and known state at packet arrival."
+}

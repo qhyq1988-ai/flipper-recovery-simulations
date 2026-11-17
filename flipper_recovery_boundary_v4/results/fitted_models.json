@@ -1,0 +1,26 @@
+{
+  "sym_simple": {
+    "gain": 20,
+    "up": 115,
+    "down": 115.0,
+    "memory_s": 0.0
+  },
+  "sym_memory": {
+    "gain": 24,
+    "up": 135,
+    "down": 135.0,
+    "memory_s": 0.045
+  },
+  "asym_simple": {
+    "gain": 16,
+    "up": 135,
+    "down": 105.3,
+    "memory_s": 0.0
+  },
+  "asym_memory": {
+    "gain": 20,
+    "up": 135,
+    "down": 120.15,
+    "memory_s": 0.03
+  }
+}

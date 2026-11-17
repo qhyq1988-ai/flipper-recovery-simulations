@@ -1,0 +1,138 @@
+{
+  "selected_pairings": {
+    "fixed": {
+      "raw_decision": {
+        "total": 800,
+        "changed": 40,
+        "table": {
+          "abstain -> abstain": 415,
+          "now -> abstain": 20,
+          "now -> now": 135,
+          "now -> wait": 5,
+          "wait -> now": 15,
+          "wait -> wait": 210
+        }
+      },
+      "calibrated_decision": {
+        "total": 800,
+        "changed": 60,
+        "table": {
+          "abstain -> abstain": 450,
+          "abstain -> now": 5,
+          "abstain -> wait": 5,
+          "now -> abstain": 20,
+          "now -> now": 120,
+          "now -> wait": 10,
+          "wait -> now": 20,
+          "wait -> wait": 170
+        }
+      }
+    },
+    "jitter": {
+      "raw_decision": {
+        "total": 800,
+        "changed": 40,
+        "table": {
+          "abstain -> abstain": 415,
+          "now -> abstain": 20,
+          "now -> now": 135,
+          "now -> wait": 5,
+          "wait -> now": 15,
+          "wait -> wait": 210
+        }
+      },
+      "calibrated_decision": {
+        "total": 800,
+        "changed": 60,
+        "table": {
+          "abstain -> abstain": 450,
+          "abstain -> now": 5,
+          "abstain -> wait": 5,
+          "now -> abstain": 20,
+          "now -> now": 120,
+          "now -> wait": 10,
+          "wait -> now": 20,
+          "wait -> wait": 170
+        }
+      }
+    }
+  },
+  "hidden_plant_conflicts": [
+    {
+      "profile": "load",
+      "nominal_wait_ok_shift_now_only": 16,
+      "nominal_wait_ok_shift_neither": 1,
+      "pair_coordinates": 160
+    },
+    {
+      "profile": "direction",
+      "nominal_wait_ok_shift_now_only": 6,
+      "nominal_wait_ok_shift_neither": 3,
+      "pair_coordinates": 160
+    },
+    {
+      "profile": "lag",
+      "nominal_wait_ok_shift_now_only": 8,
+      "nominal_wait_ok_shift_neither": 11,
+      "pair_coordinates": 160
+    },
+    {
+      "profile": "combined",
+      "nominal_wait_ok_shift_now_only": 11,
+      "nominal_wait_ok_shift_neither": 10,
+      "pair_coordinates": 160
+    }
+  ],
+  "example": {
+    "key": "heldout-45400-combined-fixed-45",
+    "split": "heldout",
+    "seed": "45400",
+    "phase_deg": "-1",
+    "turn_sign": "1",
+    "prefix_offset_deg": "-8",
+    "target_offset_deg": "8",
+    "profile": "combined",
+    "transport": "fixed",
+    "from_request_ms": "450",
+    "branch_delay_ms": "80",
+    "now_arrival_ms": "530",
+    "wait_arrival_ms": "580",
+    "now_ok": "1",
+    "wait_ok": "0",
+    "outcome": "urgent",
+    "now_recovery_ms": "730",
+    "wait_recovery_ms": "780",
+    "now_peak_deg": "3.7942377930275812",
+    "wait_peak_deg": "7.531877641728357",
+    "now_full_peak_deg": "19.57308576237826",
+    "wait_full_peak_deg": "19.57308576237826",
+    "same_input_nominal": {
+      "key": "heldout-45400-nominal-fixed-45",
+      "split": "heldout",
+      "seed": "45400",
+      "phase_deg": "-1",
+      "turn_sign": "1",
+      "prefix_offset_deg": "-8",
+      "target_offset_deg": "8",
+      "profile": "nominal",
+      "transport": "fixed",
+      "from_request_ms": "450",
+      "branch_delay_ms": "80",
+      "now_arrival_ms": "530",
+      "wait_arrival_ms": "580",
+      "now_ok": "1",
+      "wait_ok": "1",
+      "outcome": "both_ok",
+      "now_recovery_ms": "690",
+      "wait_recovery_ms": "750",
+      "now_peak_deg": "3.7481966405803067",
+      "wait_peak_deg": "3.700229273579936",
+      "now_full_peak_deg": "19.578829026881998",
+      "wait_full_peak_deg": "19.578829026881998"
+    },
+    "predictions": {
+      "sym_simple": "now",
+      "sym_memory": "now"
+    }
+  }
+}

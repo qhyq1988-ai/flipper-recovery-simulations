@@ -1,0 +1,9 @@
+profile,turn_sign,pairs,label_changed_vs_nominal,mean_now_recovery_shift_ms
+load,1,80,19,37.125
+load,-1,80,20,35.125
+direction,1,80,0,0
+direction,-1,80,21,61.75
+lag,1,80,14,22.375
+lag,-1,80,25,96.625
+combined,1,80,17,32.25
+combined,-1,80,27,91

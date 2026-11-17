@@ -1,0 +1,92 @@
+{
+  "pairs": 1600,
+  "late_adoption_before_deadline": 1220,
+  "late_adoption_at_or_after_deadline": 380,
+  "eligible_late_deadline_misses": 893,
+  "eligible_misses_excluded_offline": 850,
+  "eligible_early_pass_late_deadline_miss": 236,
+  "eligible_early_pass_late_deadline_miss_excluded_offline": 202,
+  "by_transport": {
+    "fixed": {
+      "pairs": 800,
+      "late_adoption_before_deadline": 640,
+      "late_adoption_at_or_after_deadline": 160,
+      "eligible_late_deadline_misses": 464,
+      "eligible_misses_excluded_offline": 449,
+      "eligible_early_pass_late_deadline_miss": 118,
+      "eligible_early_pass_late_deadline_miss_excluded_offline": 107
+    },
+    "jitter": {
+      "pairs": 800,
+      "late_adoption_before_deadline": 580,
+      "late_adoption_at_or_after_deadline": 220,
+      "eligible_late_deadline_misses": 429,
+      "eligible_misses_excluded_offline": 401,
+      "eligible_early_pass_late_deadline_miss": 118,
+      "eligible_early_pass_late_deadline_miss_excluded_offline": 95
+    }
+  },
+  "by_profile": {
+    "nominal": {
+      "pairs": 320,
+      "late_adoption_before_deadline": 244,
+      "late_adoption_at_or_after_deadline": 76,
+      "eligible_late_deadline_misses": 150,
+      "eligible_misses_excluded_offline": 139,
+      "eligible_early_pass_late_deadline_miss": 58,
+      "eligible_early_pass_late_deadline_miss_excluded_offline": 47
+    },
+    "load": {
+      "pairs": 320,
+      "late_adoption_before_deadline": 244,
+      "late_adoption_at_or_after_deadline": 76,
+      "eligible_late_deadline_misses": 188,
+      "eligible_misses_excluded_offline": 183,
+      "eligible_early_pass_late_deadline_miss": 55,
+      "eligible_early_pass_late_deadline_miss_excluded_offline": 50
+    },
+    "direction": {
+      "pairs": 320,
+      "late_adoption_before_deadline": 244,
+      "late_adoption_at_or_after_deadline": 76,
+      "eligible_late_deadline_misses": 176,
+      "eligible_misses_excluded_offline": 165,
+      "eligible_early_pass_late_deadline_miss": 47,
+      "eligible_early_pass_late_deadline_miss_excluded_offline": 36
+    },
+    "lag": {
+      "pairs": 320,
+      "late_adoption_before_deadline": 244,
+      "late_adoption_at_or_after_deadline": 76,
+      "eligible_late_deadline_misses": 180,
+      "eligible_misses_excluded_offline": 171,
+      "eligible_early_pass_late_deadline_miss": 36,
+      "eligible_early_pass_late_deadline_miss_excluded_offline": 34
+    },
+    "combined": {
+      "pairs": 320,
+      "late_adoption_before_deadline": 244,
+      "late_adoption_at_or_after_deadline": 76,
+      "eligible_late_deadline_misses": 199,
+      "eligible_misses_excluded_offline": 192,
+      "eligible_early_pass_late_deadline_miss": 40,
+      "eligible_early_pass_late_deadline_miss_excluded_offline": 35
+    }
+  },
+  "illustrated_witness": {
+    "key": "heldout-45400-combined-fixed-45",
+    "seed": 45400,
+    "profile": "combined",
+    "transport": "fixed",
+    "early_send_ms": 450,
+    "early_adoption_ms": 530,
+    "late_adoption_ms": 580,
+    "early_pass": true,
+    "late_pass": false,
+    "early_deadline_error_deg": 2.3227944639180187,
+    "late_deadline_error_deg": 7.531877641728357,
+    "eligible_pre_deadline_adoption": true,
+    "offline_lower_bound_deg": 6.457435649594252,
+    "offline_excluded": true
+  }
+}

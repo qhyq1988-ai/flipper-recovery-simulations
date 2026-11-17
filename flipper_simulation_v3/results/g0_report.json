@@ -1,0 +1,732 @@
+{
+  "gate": true,
+  "scenes": 16,
+  "totals": {
+    "zero_update": 0,
+    "every_change": 16,
+    "ideal_arrival": 16,
+    "periodic_1s": 0
+  },
+  "informative": [
+    "gate_36110",
+    "gate_36111",
+    "gate_36112",
+    "gate_36113",
+    "gate_36114",
+    "gate_36115",
+    "gate_36116",
+    "gate_36117",
+    "gate_36118",
+    "gate_36119",
+    "gate_36120",
+    "gate_36121",
+    "gate_36122",
+    "gate_36123",
+    "gate_36124",
+    "gate_36125"
+  ],
+  "best_threshold": [
+    1,
+    0.25
+  ],
+  "best_threshold_pass": 16,
+  "witness": [
+    {
+      "scene": "gate_36112",
+      "family": "brief",
+      "threshold": {
+        "scene": "gate_36112",
+        "threshold": 1,
+        "dwell_s": 0.25,
+        "updates": 6,
+        "body_bytes": 39,
+        "passed": 1,
+        "peak_scored": 3.792837190662195,
+        "peak_all": 20.442270109645488,
+        "eventual_recovery_s": 0.54,
+        "integral_error": 53.50538304985258
+      },
+      "offline_ticks": [
+        265,
+        575
+      ],
+      "offline_metrics": {
+        "updates": 2,
+        "body_bytes": 13,
+        "passed": 1,
+        "peak_scored": 3.792837187744107,
+        "peak_all": 20.442270109648142,
+        "eventual_recovery_s": 0.24,
+        "integral_error": 37.36423956692009
+      }
+    },
+    {
+      "scene": "gate_36120",
+      "family": "brief",
+      "threshold": {
+        "scene": "gate_36120",
+        "threshold": 1,
+        "dwell_s": 0.25,
+        "updates": 6,
+        "body_bytes": 39,
+        "passed": 1,
+        "peak_scored": 3.5898274883029195,
+        "peak_all": 22.435244146409907,
+        "eventual_recovery_s": 0.64,
+        "integral_error": 62.7515889883111
+      },
+      "offline_ticks": [
+        265,
+        575
+      ],
+      "offline_metrics": {
+        "updates": 2,
+        "body_bytes": 13,
+        "passed": 1,
+        "peak_scored": 3.5913294116909196,
+        "peak_all": 22.344681491982087,
+        "eventual_recovery_s": 0.38,
+        "integral_error": 45.601041203404854
+      }
+    },
+    {
+      "scene": "gate_36124",
+      "family": "brief",
+      "threshold": {
+        "scene": "gate_36124",
+        "threshold": 1,
+        "dwell_s": 0.25,
+        "updates": 6,
+        "body_bytes": 39,
+        "passed": 1,
+        "peak_scored": 3.8077753330252246,
+        "peak_all": 21.663679521194197,
+        "eventual_recovery_s": 0.54,
+        "integral_error": 53.85900033423435
+      },
+      "offline_ticks": [
+        265,
+        575
+      ],
+      "offline_metrics": {
+        "updates": 2,
+        "body_bytes": 13,
+        "passed": 1,
+        "peak_scored": 3.8077786799795827,
+        "peak_all": 21.663679584632856,
+        "eventual_recovery_s": 0.26,
+        "integral_error": 38.08231791973105
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "gate_36110",
+      "family": "sustained",
+      "seed": 36110,
+      "phase": 25,
+      "events": [
+        [
+          115,
+          -10
+        ],
+        [
+          455,
+          0
+        ]
+      ],
+      "horizon": 760,
+      "profile": "nominal",
+      "delay": 8,
+      "jitter": 3
+    },
+    {
+      "name": "gate_36111",
+      "family": "alternating",
+      "seed": 36111,
+      "phase": 201,
+      "events": [
+        [
+          115,
+          -10
+        ],
+        [
+          270,
+          10
+        ],
+        [
+          475,
+          -9
+        ],
+        [
+          630,
+          0
+        ]
+      ],
+      "horizon": 760,
+      "profile": "nominal",
+      "delay": 8,
+      "jitter": 3
+    },
+    {
+      "name": "gate_36112",
+      "family": "brief",
+      "seed": 36112,
+      "phase": 326,
+      "events": [
+        [
+          115,
+          9
+        ],
+        [
+          150,
+          0
+        ],
+        [
+          265,
+          -9
+        ],
+        [
+          415,
+          8
+        ],
+        [
+          450,
+          -9
+        ],
+        [
+          575,
+          8
+        ]
+      ],
+      "horizon": 760,
+      "profile": "nominal",
+      "delay": 8,
+      "jitter": 3
+    },
+    {
+      "name": "gate_36113",
+      "family": "ramp",
+      "seed": 36113,
+      "phase": 249,
+      "events": [
+        [
+          135,
+          1
+        ],
+        [
+          155,
+          3
+        ],
+        [
+          175,
+          4
+        ],
+        [
+          195,
+          6
+        ],
+        [
+          215,
+          7
+        ],
+        [
+          315,
+          5
+        ],
+        [
+          335,
+          4
+        ],
+        [
+          355,
+          2
+        ],
+        [
+          375,
+          0
+        ],
+        [
+          395,
+          -2
+        ],
+        [
+          415,
+          -4
+        ],
+        [
+          435,
+          -5
+        ],
+        [
+          455,
+          -7
+        ],
+        [
+          560,
+          10
+        ]
+      ],
+      "horizon": 760,
+      "profile": "nominal",
+      "delay": 8,
+      "jitter": 3
+    },
+    {
+      "name": "gate_36114",
+      "family": "sustained",
+      "seed": 36114,
+      "phase": 244,
+      "events": [
+        [
+          115,
+          -7
+        ],
+        [
+          455,
+          0
+        ]
+      ],
+      "horizon": 760,
+      "profile": "loaded",
+      "delay": 10,
+      "jitter": 4
+    },
+    {
+      "name": "gate_36115",
+      "family": "alternating",
+      "seed": 36115,
+      "phase": 159,
+      "events": [
+        [
+          115,
+          7
+        ],
+        [
+          270,
+          -8
+        ],
+        [
+          475,
+          9
+        ],
+        [
+          630,
+          0
+        ]
+      ],
+      "horizon": 760,
+      "profile": "loaded",
+      "delay": 10,
+      "jitter": 4
+    },
+    {
+      "name": "gate_36116",
+      "family": "brief",
+      "seed": 36116,
+      "phase": 231,
+      "events": [
+        [
+          115,
+          7
+        ],
+        [
+          135,
+          0
+        ],
+        [
+          265,
+          -7
+        ],
+        [
+          415,
+          10
+        ],
+        [
+          435,
+          -7
+        ],
+        [
+          575,
+          10
+        ]
+      ],
+      "horizon": 760,
+      "profile": "loaded",
+      "delay": 10,
+      "jitter": 4
+    },
+    {
+      "name": "gate_36117",
+      "family": "ramp",
+      "seed": 36117,
+      "phase": 289,
+      "events": [
+        [
+          135,
+          2
+        ],
+        [
+          155,
+          4
+        ],
+        [
+          175,
+          6
+        ],
+        [
+          195,
+          8
+        ],
+        [
+          215,
+          10
+        ],
+        [
+          315,
+          8
+        ],
+        [
+          335,
+          6
+        ],
+        [
+          355,
+          4
+        ],
+        [
+          375,
+          2
+        ],
+        [
+          395,
+          -1
+        ],
+        [
+          415,
+          -3
+        ],
+        [
+          435,
+          -5
+        ],
+        [
+          455,
+          -7
+        ],
+        [
+          560,
+          6
+        ]
+      ],
+      "horizon": 760,
+      "profile": "loaded",
+      "delay": 10,
+      "jitter": 4
+    },
+    {
+      "name": "gate_36118",
+      "family": "sustained",
+      "seed": 36118,
+      "phase": 228,
+      "events": [
+        [
+          115,
+          8
+        ],
+        [
+          455,
+          2
+        ]
+      ],
+      "horizon": 760,
+      "profile": "asymmetric",
+      "delay": 13,
+      "jitter": 5
+    },
+    {
+      "name": "gate_36119",
+      "family": "alternating",
+      "seed": 36119,
+      "phase": 45,
+      "events": [
+        [
+          115,
+          9
+        ],
+        [
+          270,
+          -9
+        ],
+        [
+          475,
+          9
+        ],
+        [
+          630,
+          0
+        ]
+      ],
+      "horizon": 760,
+      "profile": "asymmetric",
+      "delay": 13,
+      "jitter": 5
+    },
+    {
+      "name": "gate_36120",
+      "family": "brief",
+      "seed": 36120,
+      "phase": 250,
+      "events": [
+        [
+          115,
+          9
+        ],
+        [
+          170,
+          0
+        ],
+        [
+          265,
+          -9
+        ],
+        [
+          415,
+          10
+        ],
+        [
+          470,
+          -9
+        ],
+        [
+          575,
+          10
+        ]
+      ],
+      "horizon": 760,
+      "profile": "asymmetric",
+      "delay": 13,
+      "jitter": 5
+    },
+    {
+      "name": "gate_36121",
+      "family": "ramp",
+      "seed": 36121,
+      "phase": 277,
+      "events": [
+        [
+          135,
+          -1
+        ],
+        [
+          155,
+          -3
+        ],
+        [
+          175,
+          -4
+        ],
+        [
+          195,
+          -6
+        ],
+        [
+          215,
+          -7
+        ],
+        [
+          315,
+          -5
+        ],
+        [
+          335,
+          -3
+        ],
+        [
+          355,
+          -1
+        ],
+        [
+          375,
+          1
+        ],
+        [
+          395,
+          3
+        ],
+        [
+          415,
+          5
+        ],
+        [
+          435,
+          7
+        ],
+        [
+          455,
+          9
+        ],
+        [
+          560,
+          -7
+        ]
+      ],
+      "horizon": 760,
+      "profile": "asymmetric",
+      "delay": 13,
+      "jitter": 5
+    },
+    {
+      "name": "gate_36122",
+      "family": "sustained",
+      "seed": 36122,
+      "phase": 152,
+      "events": [
+        [
+          115,
+          8
+        ],
+        [
+          455,
+          0
+        ]
+      ],
+      "horizon": 760,
+      "profile": "nominal",
+      "delay": 8,
+      "jitter": 3
+    },
+    {
+      "name": "gate_36123",
+      "family": "alternating",
+      "seed": 36123,
+      "phase": 320,
+      "events": [
+        [
+          115,
+          9
+        ],
+        [
+          270,
+          -9
+        ],
+        [
+          475,
+          8
+        ],
+        [
+          630,
+          0
+        ]
+      ],
+      "horizon": 760,
+      "profile": "nominal",
+      "delay": 8,
+      "jitter": 3
+    },
+    {
+      "name": "gate_36124",
+      "family": "brief",
+      "seed": 36124,
+      "phase": 271,
+      "events": [
+        [
+          115,
+          8
+        ],
+        [
+          160,
+          0
+        ],
+        [
+          265,
+          -9
+        ],
+        [
+          415,
+          9
+        ],
+        [
+          460,
+          -9
+        ],
+        [
+          575,
+          9
+        ]
+      ],
+      "horizon": 760,
+      "profile": "nominal",
+      "delay": 8,
+      "jitter": 3
+    },
+    {
+      "name": "gate_36125",
+      "family": "ramp",
+      "seed": 36125,
+      "phase": 207,
+      "events": [
+        [
+          135,
+          -2
+        ],
+        [
+          155,
+          -4
+        ],
+        [
+          175,
+          -6
+        ],
+        [
+          195,
+          -8
+        ],
+        [
+          215,
+          -10
+        ],
+        [
+          315,
+          -8
+        ],
+        [
+          335,
+          -5
+        ],
+        [
+          355,
+          -3
+        ],
+        [
+          375,
+          0
+        ],
+        [
+          395,
+          2
+        ],
+        [
+          415,
+          4
+        ],
+        [
+          435,
+          7
+        ],
+        [
+          455,
+          9
+        ],
+        [
+          560,
+          -8
+        ]
+      ],
+      "horizon": 760,
+      "profile": "nominal",
+      "delay": 8,
+      "jitter": 3
+    }
+  ]
+}

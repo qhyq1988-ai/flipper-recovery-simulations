@@ -1,0 +1,47 @@
+{
+  "fit_seeds": [
+    36701,
+    36702,
+    36703,
+    36704,
+    36705,
+    36706
+  ],
+  "heldout_seeds": {
+    "nominal": [
+      36721,
+      36722,
+      36723,
+      36724,
+      36725,
+      36726
+    ],
+    "loaded": [
+      36741,
+      36742,
+      36743,
+      36744,
+      36745,
+      36746
+    ],
+    "asymmetric": [
+      36761,
+      36762,
+      36763,
+      36764,
+      36765,
+      36766
+    ]
+  },
+  "lags_ms": [
+    0,
+    300,
+    450,
+    550,
+    600,
+    650
+  ],
+  "criterion": "recovery MAE in seconds + 0.040 * false-feasible share + 0.020 * false-infeasible share",
+  "gate": "Same as primary: memory error below 50 ms and 10 ms lower than stateless with no extra false feasible, nominal and at least one model shift.",
+  "relationship": "Follow-up diagnosis using independent scenarios after primary G1 result."
+}

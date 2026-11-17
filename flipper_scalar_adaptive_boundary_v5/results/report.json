@@ -1,0 +1,323 @@
+{
+  "adaptive": {
+    "stages": [
+      {
+        "mode": "command_history",
+        "problem": {
+          "step": 18.0,
+          "band": 5.0,
+          "deadline": 0.75,
+          "period": 0.05,
+          "e0": {
+            "lo": 16,
+            "hi": 20
+          },
+          "gain": {
+            "lo": 18,
+            "hi": 28
+          },
+          "forward": {
+            "lo": 65,
+            "hi": 155
+          },
+          "reverse": {
+            "lo": 72,
+            "hi": 160
+          },
+          "delay": {
+            "lo": 0.05,
+            "hi": 0.11
+          }
+        },
+        "continuous_s": 0.4399984561207244,
+        "last_slot": 8,
+        "last_send_s": 0.4
+      },
+      {
+        "mode": "after_sample_1",
+        "problem": {
+          "step": 18.0,
+          "band": 5.0,
+          "deadline": 0.75,
+          "period": 0.05,
+          "e0": {
+            "lo": 16,
+            "hi": 20
+          },
+          "gain": {
+            "lo": 18,
+            "hi": 28
+          },
+          "forward": {
+            "lo": 110.66666666666701,
+            "hi": 115.66666666666701
+          },
+          "reverse": {
+            "lo": 72,
+            "hi": 160
+          },
+          "delay": {
+            "lo": 0.05,
+            "hi": 0.11
+          }
+        },
+        "continuous_s": 0.5214206876243441,
+        "last_slot": 10,
+        "last_send_s": 0.5
+      },
+      {
+        "mode": "after_sample_2",
+        "problem": {
+          "step": 18.0,
+          "band": 5.0,
+          "deadline": 0.75,
+          "period": 0.05,
+          "e0": {
+            "lo": 16,
+            "hi": 20
+          },
+          "gain": {
+            "lo": 18,
+            "hi": 28
+          },
+          "forward": {
+            "lo": 110.66666666666701,
+            "hi": 113.08333333333367
+          },
+          "reverse": {
+            "lo": 72,
+            "hi": 160
+          },
+          "delay": {
+            "lo": 0.05,
+            "hi": 0.11
+          }
+        },
+        "continuous_s": 0.5214206876243441,
+        "last_slot": 10,
+        "last_send_s": 0.5
+      },
+      {
+        "mode": "after_sample_3",
+        "problem": {
+          "step": 18.0,
+          "band": 5.0,
+          "deadline": 0.75,
+          "period": 0.05,
+          "e0": {
+            "lo": 16,
+            "hi": 20
+          },
+          "gain": {
+            "lo": 18,
+            "hi": 28
+          },
+          "forward": {
+            "lo": 110.66666666666701,
+            "hi": 113.08333333333367
+          },
+          "reverse": {
+            "lo": 72,
+            "hi": 160
+          },
+          "delay": {
+            "lo": 0.05,
+            "hi": 0.11
+          }
+        },
+        "continuous_s": 0.5214206876243441,
+        "last_slot": 10,
+        "last_send_s": 0.5
+      }
+    ],
+    "examples": [
+      {
+        "sample": 1,
+        "duration_s": 0.06,
+        "observed_gap_start_deg": 20.05,
+        "observed_gap_end_deg": 13.25999999999998,
+        "certification_threshold_deg": 8.61111111111111,
+        "reading_error_deg": 0.075,
+        "update": "updated",
+        "prior_min_deg_s": 65,
+        "prior_max_deg_s": 155,
+        "posterior_min_deg_s": 110.66666666666701,
+        "posterior_max_deg_s": 115.66666666666701
+      },
+      {
+        "sample": 2,
+        "duration_s": 0.06,
+        "observed_gap_start_deg": 19.955,
+        "observed_gap_end_deg": 13.319999999999979,
+        "certification_threshold_deg": 6.425925925925945,
+        "reading_error_deg": 0.075,
+        "update": "updated",
+        "prior_min_deg_s": 110.66666666666701,
+        "prior_max_deg_s": 115.66666666666701,
+        "posterior_min_deg_s": 110.66666666666701,
+        "posterior_max_deg_s": 113.08333333333367
+      },
+      {
+        "sample": 3,
+        "duration_s": 0.02,
+        "observed_gap_start_deg": 6.33,
+        "observed_gap_end_deg": 4.147668871337724,
+        "certification_threshold_deg": 6.282407407407426,
+        "reading_error_deg": 0.075,
+        "update": "saturation_not_certified",
+        "prior_min_deg_s": 110.66666666666701,
+        "prior_max_deg_s": 113.08333333333367,
+        "posterior_min_deg_s": 110.66666666666701,
+        "posterior_max_deg_s": 113.08333333333367
+      }
+    ],
+    "forward_speed_required_at_500_ms": 92.87542283418544,
+    "probe_duration_s_for_all_sensor_errors": {
+      "min_s": 0.015686621324954263,
+      "max_s": 0.07250896057347671
+    },
+    "illustrative_true_probe": {
+      "v_deg_s": 112.0,
+      "gain_inv_s": 22.0,
+      "initial_gap_deg": 20.0,
+      "max_angular_error_deg": 0.075
+    },
+    "near_equilibrium_gain_probe": {
+      "description": "separate optional probe, not used in main bound",
+      "gain_interval": {
+        "lo": 21.502649460867726,
+        "hi": 23.102581539041353
+      },
+      "error_bound_deg": 0.025,
+      "decision": "updated"
+    }
+  },
+  "grid": {
+    "case_paths": 3840,
+    "false_safe_count": 0,
+    "classification_disagreement": 0,
+    "largest_timing_difference_s": 3.8653853435266505e-06,
+    "integration_step_s": 0.001
+  },
+  "stress": {
+    "cases": [
+      {
+        "case": "prior_last",
+        "send_s": 0.4,
+        "arrival_s": 0.51,
+        "true_forward_cap_deg_s": 65,
+        "used_forward_interval": {
+          "lo": 65,
+          "hi": 155
+        },
+        "predicted_worst_recovery_s": 0.7100031717087123,
+        "numerical_recovery_s": 0.7100031717087383,
+        "deadline_error_deg": 2.5823135186474397,
+        "passed": 1
+      },
+      {
+        "case": "prior_next",
+        "send_s": 0.45,
+        "arrival_s": 0.56,
+        "true_forward_cap_deg_s": 65,
+        "used_forward_interval": {
+          "lo": 65,
+          "hi": 155
+        },
+        "predicted_worst_recovery_s": 0.760001289520532,
+        "numerical_recovery_s": 0.7600012895205436,
+        "deadline_error_deg": 5.65008381883533,
+        "passed": 0
+      },
+      {
+        "case": "adaptive_last",
+        "send_s": 0.5,
+        "arrival_s": 0.61,
+        "true_forward_cap_deg_s": 110.66666666666701,
+        "used_forward_interval": {
+          "lo": 110.66666666666701,
+          "hi": 113.08333333333367
+        },
+        "predicted_worst_recovery_s": 0.728579410896142,
+        "numerical_recovery_s": 0.7285818066319293,
+        "deadline_error_deg": 3.400324873560997,
+        "passed": 1
+      },
+      {
+        "case": "adaptive_next",
+        "send_s": 0.55,
+        "arrival_s": 0.66,
+        "true_forward_cap_deg_s": 110.66666666666701,
+        "used_forward_interval": {
+          "lo": 110.66666666666701,
+          "hi": 113.08333333333367
+        },
+        "predicted_worst_recovery_s": 0.7785792281578751,
+        "numerical_recovery_s": 0.778581623924325,
+        "deadline_error_deg": 8.0400138551603,
+        "passed": 0
+      },
+      {
+        "case": "stale_bound_after_load_change",
+        "send_s": 0.5,
+        "arrival_s": 0.61,
+        "true_forward_cap_deg_s": 80.0,
+        "used_forward_interval": {
+          "lo": 110.66666666666701,
+          "hi": 113.08333333333367
+        },
+        "predicted_worst_recovery_s": 0.728579410896142,
+        "numerical_recovery_s": 0.7725004259774424,
+        "deadline_error_deg": 6.800034078195388,
+        "passed": 0
+      },
+      {
+        "case": "drift_widened_last",
+        "send_s": 0.45,
+        "arrival_s": 0.56,
+        "true_forward_cap_deg_s": 75.66666666666701,
+        "used_forward_interval": {
+          "lo": 75.66666666666701,
+          "hi": 148.08333333333366
+        },
+        "predicted_worst_recovery_s": 0.7318072751387823,
+        "numerical_recovery_s": 0.7318072751387924,
+        "deadline_error_deg": 3.6616882985357764,
+        "passed": 1
+      }
+    ],
+    "drift_bound_deg_s": 35.0,
+    "drift_aware_margin": {
+      "mode": "drift_widened",
+      "problem": {
+        "step": 18.0,
+        "band": 5.0,
+        "deadline": 0.75,
+        "period": 0.05,
+        "e0": {
+          "lo": 16,
+          "hi": 20
+        },
+        "gain": {
+          "lo": 18,
+          "hi": 28
+        },
+        "forward": {
+          "lo": 75.66666666666701,
+          "hi": 148.08333333333366
+        },
+        "reverse": {
+          "lo": 72,
+          "hi": 160
+        },
+        "delay": {
+          "lo": 0.05,
+          "hi": 0.11
+        }
+      },
+      "continuous_s": 0.46819303420634384,
+      "last_slot": 9,
+      "last_send_s": 0.45
+    }
+  }
+}

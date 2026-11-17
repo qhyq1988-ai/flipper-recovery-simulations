@@ -1,0 +1,2 @@
+PASS: split isolation, matched packet arrivals, hidden-state information, and calibration rule.
+PASS: 12 result files match a clean rerun byte for byte.
