@@ -23,6 +23,8 @@ python -m pip install -r requirements.txt
 python flipper_simulation_v3/verify.py
 python flipper_recovery_boundary_v4/verify.py
 python flipper_scalar_adaptive_boundary_v5/verify.py
+python flipper_scalar_adaptive_boundary_v5/check_initial_branches.py
+python flipper_periodic_audit/check_relaxed_optimum.py
 ~~~
 
 ## Regenerate simulations
@@ -60,3 +62,21 @@ speed requests. The results condition on the simulated state at adoption.
 - [Simulation figure](flipper_periodic_audit/figures/flipper_periodic_audit.png)
 
 ![Flipper recovery trajectories and held-out reachability results](flipper_periodic_audit/figures/flipper_periodic_audit.png)
+
+## Initial-error and deadline comparisons
+
+The [additional scalar results](flipper_scalar_adaptive_boundary_v5/results/initial_branches.json)
+include 5,376 independent angle integrations on either side of the last
+guaranteed slot in four parameter boxes. The same-information comparison
+holds the initial upper error fixed through the old command. After allowing
+speed drift, propagating the old-command motion permits a 450 ms send,
+compared with 400 ms using the fixed bound. The periodic optimum check
+constructs feasible speed requests in the independent-input relaxation of
+each of the four illustrated branches. Real hardware motion has not been
+used to estimate the actuator parameters in these runs.
+
+## License and attribution
+
+The contributors' original simulation code is available under the
+[MIT License](LICENSE). The upstream Flipper firmware and mechanical design
+are maintained and licensed separately by their respective rights holders.

@@ -1,0 +1,99 @@
+{
+  "baselines": [
+    {
+      "case": "prior",
+      "fixed_s": 0.40923076923076923,
+      "propagated_s": 0.4399984561207244,
+      "fixed_slot_s": 0.4,
+      "propagated_slot_s": 0.4
+    },
+    {
+      "case": "calibrated",
+      "fixed_s": 0.503348607882729,
+      "propagated_s": 0.5214206876243441,
+      "fixed_slot_s": 0.5,
+      "propagated_slot_s": 0.5
+    },
+    {
+      "case": "drift",
+      "fixed_s": 0.44176211453744585,
+      "propagated_s": 0.46819303420634384,
+      "fixed_slot_s": 0.4,
+      "propagated_slot_s": 0.45
+    }
+  ],
+  "branch_checks": [
+    {
+      "case": "below",
+      "slot_ms": 50,
+      "lower_s": 0.22059616100747165,
+      "upper_s": 0.220596169363127,
+      "witness_gain": 8,
+      "integrated": 672,
+      "rk4_max_error_s": 9.294603972309634e-07
+    },
+    {
+      "case": "below",
+      "slot_ms": 75,
+      "lower_s": 0.2526548181975083,
+      "upper_s": 0.2526548269388267,
+      "witness_gain": 8,
+      "integrated": 672,
+      "rk4_max_error_s": 9.204747022928395e-07
+    },
+    {
+      "case": "touching",
+      "slot_ms": 25,
+      "lower_s": 0.23453634148426938,
+      "upper_s": 0.23453634148426938,
+      "witness_gain": 8,
+      "integrated": 672,
+      "rk4_max_error_s": 9.230390235898112e-07
+    },
+    {
+      "case": "touching",
+      "slot_ms": 50,
+      "lower_s": 0.2595363414842694,
+      "upper_s": 0.2595363414842694,
+      "witness_gain": 8,
+      "integrated": 672,
+      "rk4_max_error_s": 9.639263117977581e-07
+    },
+    {
+      "case": "crossing",
+      "slot_ms": 0,
+      "lower_s": 0.22405932222574323,
+      "upper_s": 0.22405932222574323,
+      "witness_gain": 8,
+      "integrated": 672,
+      "rk4_max_error_s": 9.650059550198042e-07
+    },
+    {
+      "case": "crossing",
+      "slot_ms": 25,
+      "lower_s": 0.2464267524436733,
+      "upper_s": 0.2464267524436733,
+      "witness_gain": 8,
+      "integrated": 672,
+      "rk4_max_error_s": 9.204571647658533e-07
+    },
+    {
+      "case": "reversed_gain",
+      "slot_ms": 25,
+      "lower_s": 0.24375041609696385,
+      "upper_s": 0.24375041609696385,
+      "witness_gain": 28,
+      "integrated": 672,
+      "rk4_max_error_s": 1.0465642846790857e-06
+    },
+    {
+      "case": "reversed_gain",
+      "slot_ms": 50,
+      "lower_s": 0.27944776892206974,
+      "upper_s": 0.27944776892206974,
+      "witness_gain": 28,
+      "integrated": 672,
+      "rk4_max_error_s": 9.294603972309634e-07
+    }
+  ]
+}

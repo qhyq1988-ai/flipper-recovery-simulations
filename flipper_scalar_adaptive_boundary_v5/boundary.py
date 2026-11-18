@@ -1,5 +1,6 @@
 """Exact single-joint deadline bounds and set-membership updates."""
 from dataclasses import dataclass
+import heapq
 from math import exp, log
 
 
@@ -33,8 +34,6 @@ class Problem:
             raise ValueError("Positive gain and speed bounds and nonnegative delay are required")
         if not (0<self.band<min(self.step,self.e0.lo)) or self.deadline<=0 or self.period<=0:
             raise ValueError("The initial and old-command gaps must exceed a positive band")
-        if self.e0.hi<self.step:
-            raise ValueError("Exact rectangular corner requires e0.upper >= step")
 
 
 def remaining_gap(t, gap, k, speed):
@@ -67,8 +66,42 @@ def completion(send, delay, e0,k,forward,reverse,step,band):
     return a+time_to_band(gap,band,k,forward)
 
 
+def recovery_bounds(p, send, tolerance=1e-8):
+    """Return an attained time, an upper time, and the witness gain (seconds)."""
+    if tolerance <= 0 or send < 0:
+        raise ValueError("Positive tolerance and a nonnegative send time are required")
+    if p.e0.hi >= p.step:
+        time = completion(send, p.delay.hi, p.e0.hi, p.gain.lo, p.forward.lo,
+                          p.reverse.lo, p.step, p.band)
+        return time, time, p.gain.lo
+
+    a = send + p.delay.hi
+    def bound(old_gain, new_gain):
+        error = p.step - remaining_gap(a, p.step - p.e0.hi, old_gain, p.reverse.hi)
+        return a + time_to_band(error, p.band, new_gain, p.forward.lo)
+
+    lo, hi = p.gain.lo, p.gain.hi
+    best, witness = max((bound(k, k), k) for k in (lo, hi))
+    queue = [(-bound(hi, lo), lo, hi)]
+    while queue and -queue[0][0] > best + tolerance:
+        _, left, right = heapq.heappop(queue)
+        mid = (left + right) / 2
+        if mid == left or mid == right:
+            raise ArithmeticError("Gain subdivision reached floating-point resolution")
+        value = bound(mid, mid)
+        if value > best:
+            best, witness = value, mid
+        for l, u in ((left, mid), (mid, right)):
+            upper = bound(u, l)
+            if upper > best:
+                heapq.heappush(queue, (-upper, l, u))
+    upper = max(best, -queue[0][0]) if queue else best
+    return best, upper, witness
+
+
 def worst(p,send):
-    return completion(send,p.delay.hi,p.e0.hi,p.gain.lo,p.forward.lo,p.reverse.lo,p.step,p.band)
+    """Upper completion time, exact on the aligned branch to roundoff."""
+    return recovery_bounds(p,send)[1]
 
 
 def continuous_boundary(p):
@@ -88,7 +121,7 @@ def continuous_boundary(p):
 
 def latest_slot(p):
     slots=range(int(p.deadline/p.period+1e-11)+1)
-    return max((i for i in slots if worst(p,i*p.period)<=p.deadline+1e-12),default=None)
+    return max((i for i in slots if worst(p,i*p.period)<=p.deadline),default=None)
 
 
 def speed_update(prior,k_min,start_measured_gap,end_measured_gap,duration,error):
